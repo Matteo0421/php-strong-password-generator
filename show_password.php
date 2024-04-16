@@ -11,15 +11,17 @@ if (isset($_SESSION['password_generata'])) {
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Generata</title>
-</head>
+<?php 
+include_once __DIR__ . '/partials/head.php';
+?>
 <body>
-    <h1>Password generata:</h1>
-    <p><?php echo $password_generata; ?></p>
+    <h1 class="text-center text-white mt-4">Password generata:</h1>
+    <h3 class="text-center mt-4"><?php echo $password_generata; ?></h3>
 </body>
 </html>
+
+<style>
+  body{
+    background-color: rgb(192, 220, 192);
+  }
+</style>
