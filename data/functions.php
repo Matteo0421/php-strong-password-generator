@@ -7,6 +7,8 @@ function genera_password($lunghezza) {
     $lunghezza_caratteri = strlen($caratteri);
     $password = '';
 
+    $lunghezza = min($lunghezza, 30);
+
     for ($i = 0; $i < $lunghezza; $i++) {
         $password .= $caratteri[rand(0, $lunghezza_caratteri - 1)];
     }
